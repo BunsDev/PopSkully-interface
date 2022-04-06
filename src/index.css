@@ -1,13 +1,601 @@
-body {
+/* The Cult was here. 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                                                  @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                                                  @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                                                  @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                                                  @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@          @@@@@@@@@@          @@@@@@@@@@          @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@          @@@@@@@@@@          @@@@@@@@@@          @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@          @@@@@@@@@@          @@@@@@@@@@          @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@          @@@@@@@@@@          @@@@@@@@@@          @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@          @@@@@@@@@@          @@@@@@@@@@          @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@          @@@@@@@@@@          @@@@@@@@@@          @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@          @@@@@@@@@@          @@@@@@@@@@          @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@          @@@@@@@@@@          @@@@@@@@@@          @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                                                  @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                                                  @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                                                  @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                                                  @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+/* Global */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+button,
+h1,
+h2 {
+  font-family: "Bangers", cursive;
+}
+.logo {
+  font-family: "Bangers", cursive;
+  color: #fff576;
+}
+h3 {
+  font-family: "Bangers", cursive;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+button a {
+  color: #fff;
+  font-family: "Bangers", cursive;
+}
+button a:hover {
+  color: #fff;
+}
+.logo {
+  font-size: 42px;
+  margin-right: auto;
+  color: white;
+}
+.logo a {
+  font-family: "Bangers", cursive;
+}
+.logo h4 {
+  display: inline;
+  font-size: 32px;
+  color: black;
+  font-weight: bolder;
+}
+.logo a:hover {
+  color: lightgrey;
+}
+a {
+  color: white;
+  cursor: pointer;
+}
+button {
+  text-decoration: none;
+  outline: none;
+  border: 0;
+}
+button:hover {
+  color: #fff576;
+}
+ul {
+  list-style: none;
+}
+body html {
+  overflow-x: initial !important;
+  min-height: 100%;
+}
+.active {
+  font-weight: bold;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 75px;
+  justify-content: flex-end;
+  padding: 20px;
+  color: white;
+  background-color: #000000;
+  box-shadow: 0px 0px 5px black;
+}
+.navbar button {
+  padding: 5px;
+  width: 100px;
+  border-radius: 15px;
+  background-color: #ed3a3a;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.navbar button a {
+  padding: 5px;
+  width: 100px;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.navbar li a {
+  color: lightgray;
+}
+.navbar li a:hover {
+  color: white;
+}
+.navbar button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5.1px 5.1px rgba(0, 0, 0, 0.349);
+}
+.navbar button:active {
+  transform: scale(1);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.349);
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.nav-links li {
+  margin: 0 10px;
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav-links li a {
+  transition: all 0.3 ease 0s;
+}
+li .connect-btn a {
+  color: white;
+}
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./images/bg-img.png");
+  background-position: center top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-content {
+  margin-bottom: 150px;
+  color: whitesmoke;
+  text-align: center;
+}
+header h1 {
+  font-size: 100px;
+  color: #ffffff;
+}
+header h3 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+header .pop-skully {
+  position: relative;
+}
+.drops {
+  width: 100%;
+}
+.drops h1 {
+  font-size: 72px;
+}
+.drops h2 {
+  font-size: 48px;
+  text-align: center;
+  color: #ffcb0f;
+}
+.mint-text button {
+  padding: 10px 24px 10px 20px;
+  border-radius: 20px;
+  background-color: #ed3a3a;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.mint-text button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5.1px 5.1px rgba(0, 0, 0, 0.349);
+}
+.mint-text button:active {
+  transform: scale(1);
+  box-shadow: 0px 5px 5px rgba(138, 138, 138, 0.349);
+}
+.mint-text button a {
+  padding: 5px;
+  width: 100px;
+  border-radius: 15px;
+  color: #000000;
+  font-size: 18px;
+  cursor: pointer;
+}
+.mint-text h4 {
+  color: whitesmoke;
+}
+.header-content p {
+  font-size: 2vmin;
+  color: black;
+  margin-bottom: 30px;
+}
+.mint-text h1 {
+  font-size: 20px;
+  text-align: center;
+}
+.mint-text h3 {
+  text-align: center;
+  margin-top: 15px;
+}
+/*Dashboard Button*/
+.header-content {
+  width: 100%;
+}
+section {
+  width: 80%;
+  margin: 0px auto;
+}
+.info {
+  width: 100vw;
+  background-color: #0f0f0f;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-top: 0px;
+  color: white;
+  text-align: left;
+}
+.info h4 {
+  color: white;
+}
+.team .team-members h4 {
+  font-size: 14px;
+  color: #adadad;
+}
+.team h2 {
+  font-size: 14px;
+  color: #adadad;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.team h4 {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  color: grey;
+}
+.who {
+  align-content: center;
+  width: 50%;
+}
+.title {
+  text-align: center;
+  color: #000;
+  margin-bottom: 10px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.row .col img {
+  width: 80%;
+  border-radius: 0px;
+}
+.row .col p {
+  text-align: left;
+}
+.info .row .col {
+  text-align: center;
+}
+
+.drops img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 400px;
+}
+.drops .row {
+  flex-direction: column;
+}
+.drops h1 {
+  margin-bottom: 10px;
+}
+/* GALLERY */
+.gallery {
+  width: 100vw;
+  height: 300px;
+  background-image: url("./images/gallery-bg-img.png");
+  background-position: center;
+  margin-top: 80px;
+  margin-bottom: 0px;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+}
+.gallery h1 {
+  padding-bottom: 15px;
+  color: white;
+}
+.gallery p {
+  padding-bottom: 15px;
+  color: white;
+}
+/* TEAM */
+.team {
+  width: 100vw;
+  position: center;
+  background-color: whitesmoke;
+  margin-top: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.team .row .col img {
+  border-radius: 50%;
+  transition: 0.3s ease;
+  box-shadow: 0px 2px 5px grey;
+  max-height: 400px;
+  max-width: 400px;
+  display: flex;
+}
+.drops .row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team .row .col img:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 2.2px 5.2px grey;
+}
+.team .row .col img:active {
+  transform: scale(1);
+  box-shadow: 0px 2.1px 5.1px grey;
+}
+.team .team-members img {
+  border-radius: 50%;
+  min-height: 100px;
+  min-width: 100px;
+  display: flex;
+}
+.team .team .col p {
+  text-align: left;
+}
+.team .row {
+  margin-top: 50px;
+}
+.team h1 {
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+.team h3 {
+  margin-top: 15px;
+  font-size: 24px;
+}
+.team-members img {
+  align-items: center;
+  margin-left: 10%;
+  padding: 0;
+}
+h1 {
+  font-weight: lighter;
+  font-size: 36px;
+}
+h4 {
+  font-size: 18px;
+  margin: 20px auto;
+  font-weight: 1;
+  color: grey;
+}
+p {
+  font-size: 12px;
+  color: grey;
+  padding: 0px 40px;
+}
+section .podcasts {
+  width: 100%;
+}
+.card-section {
+  width: 100vw;
+  background-image: url("./images/gallery-bg-img.png");
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+}
+.card-section h1 {
+  padding-bottom: 25px;
+}
+.card-section p {
+  padding-top: 25px;
+  color: white;
+  font-size: 18px;
+}
+.card {
+  display: inline-block;
+  margin: 0 auto;
+  background-color: #000;
+  width: 350px;
+  height: 180px;
+  border-radius: 15px;
+  text-align: center;
+  position: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.349);
+  transition: 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 10.1px 20.1px rgba(0, 0, 0, 0.349);
+}
+.card:active {
+  transform: scale(1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.349);
+}
+.card h2 {
+  color: black;
+  font-weight: lighter;
+  padding-top: 10px;
+  font-size: 18px;
+}
+.card h1 {
+  font-size: 72px;
+  padding-bottom: 10px;
+  color: white;
+}
+.card p {
+  padding-top: 15px;
+  font-size: 16px;
+  font-weight: lighter;
+  color: #ed3a3a;
+  margin-bottom: 10px;
+}
+.card img {
+  height: 80px;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+.bottom-card {
+  padding-top: 15px;
+  background-color: black;
+  border-radius: 0px 0px 15px 15px;
+}
+.card button {
+  outline: none;
+  padding-bottom: 20px;
+  width: 100%;
+  border-radius: 15px;
+  background-color: black;
+  color: rgb(226, 226, 226);
+  font-size: 24px;
+  cursor: pointer;
+}
+.card button:hover {
+  color: white;
+}
+.footer {
+  width: 100%;
+  min-height: 100px;
+  height: 100px;
+  padding: 20px 80px;
+  margin: 0;
+  background: #000000;
+  text-align: center;
+  margin-bottom: 0px;
+}
+/*
+Possible gradient for footer
+linear-gradient(to right, #446e61, #b5ddeb);
+*/
+.footer p {
+  color: whitesmoke;
+  margin: 20px auto;
+}
+/* MENU BUTTON */
+.menu-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+/* ANIMATIONS */
+.social-links img {
+  height: 20px;
+  margin: 20px;
+  cursor: pointer;
+}
+.social-links {
+  text-align: center;
+}
+li:hover {
+  color: lightgrey;
+  cursor: pointer;
+}
+
+/* Styling for mobile */
+@media only screen and (max-width: 850px) {
+  .menu-btn {
+    display: block;
+    margin-top: -15px;
+  }
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 75px;
+    justify-content: space-between;
+    padding: 0px;
+    color: white;
+    z-index: 99;
+  }
+  p {
+    font-size: 20px;
+  }
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .drops img {
+    position: absolute;
+    margin-right: 50px;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: black;
+    margin-top: -900px;
+    padding: 0px;
+  }
+  .mobile-menu {
+    margin-top: 0px;
+  }
+  header h1 {
+    margin-top: -175px;
+    margin-bottom: 10px;
+    font-size: 92px;
+  }
+  .nav-links li {
+    margin: 30px auto;
+  }
+  .team p {
+    font-size: 12px;
+  }
+  .card {
+    width: 300px;
+  }
+  .drops .row {
+    flex-direction: column;
+  }
+  .drops .row .col {
+    margin: 20px auto;
+  }
+  .footer {
+    padding: 10px;
+  }
 }
