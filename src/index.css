@@ -579,6 +579,7 @@ li:hover {
   .drops img {
     position: absolute;
     margin-right: 50px;
+    margin-bottom: -1rem;
   }
   .nav-links {
     flex-direction: column;
