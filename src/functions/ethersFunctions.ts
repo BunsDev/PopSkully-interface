@@ -23,7 +23,7 @@ export const initializeEthers = async (dispatch:any) => {
     dispatch({type: 'triggerAll', content: false});
 
     popsContract = new ethers.Contract(
-      "0xD94dBFf1469b020407a4077FcEb2B9a4c69214D6",
+      "0x1b60B6daA371F5066bd8C1DC032627bf1f4E95df",
       popsABI,
       signer
     );

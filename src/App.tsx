@@ -64,7 +64,7 @@ function App() {
                     {
                             !state.walletAddress ? <h4>Connect Wallet to enter the Summoning Circle</h4> : 
                             <>
-                                <input type="number" value={spendInput} onInput={e => setSpendInput((e.target as HTMLInputElement).value)} placeholder="Amount: Max of 5"/>
+                                <input className="mint-text" type="number" value={spendInput} onInput={e => setSpendInput((e.target as HTMLInputElement).value)} placeholder="Amount: Max of 5"/>
                                 <br/>
                                 <br/>
                                 <button onClick={() => mint(dispatch, spendInput)}  disabled={false}>Mint</button>
