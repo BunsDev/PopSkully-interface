@@ -60,6 +60,15 @@ button a {
 button a:hover {
   color: #fff;
 }
+input {
+  border-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  background-color: #eee;
+}
+.no-outline:focus {
+  outline: hidden;
+}
 .logo {
   font-size: 42px;
   margin-right: auto;
@@ -198,7 +207,7 @@ header .pop-skully {
   color: #ffcb0f;
 }
 .mint-text button {
-  padding: 10px 24px 10px 20px;
+  padding: 10px 40px 10px 40px;
   border-radius: 20px;
   background-color: #ed3a3a;
   color: white;
@@ -223,6 +232,14 @@ header .pop-skully {
 }
 .mint-text h4 {
   color: whitesmoke;
+}
+.mint-text input {
+  margin-right: 15px;
+  border-radius: 15px;
+  height: 30px;
+  margin-top: 0px;
+  padding-left: 15px;
+  position: center;
 }
 .header-content p {
   font-size: 2vmin;
@@ -347,8 +364,8 @@ section {
   margin-top: 0;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 .team .row .col img {
   border-radius: 50%;
