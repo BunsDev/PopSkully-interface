@@ -67,7 +67,7 @@ function App() {
                                 <input type="number" value={spendInput} onInput={e => setSpendInput((e.target as HTMLInputElement).value)} placeholder="Amount: Max of 5"/>
                                 <br/>
                                 <br/>
-                                <button onClick={() => mint(dispatch, spendInput)}  disabled={false}>Mint</button>
+                                <button onClick={() => mint(dispatch, spendInput)}  disabled={false}>Summon</button>
                             </>
                     }
                     <h4>Each pop skully is 50 FTM</h4>
