@@ -195,6 +195,10 @@ header h3 {
 header .pop-skully {
   position: relative;
 }
+.pop-skully {
+  margin: 0px;
+  padding: 0px;
+}
 .drops {
   width: 100%;
 }
