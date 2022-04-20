@@ -328,6 +328,7 @@ section {
   bottom: 0;
   right: 0;
   height: 400px;
+  margin-bottom: -1rem;
 }
 .drops .row {
   flex-direction: column;
@@ -579,7 +580,6 @@ li:hover {
   .drops img {
     position: absolute;
     margin-right: 50px;
-    margin-bottom: -1rem;
   }
   .nav-links {
     flex-direction: column;
