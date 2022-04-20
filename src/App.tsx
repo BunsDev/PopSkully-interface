@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -9,16 +9,35 @@ import menu_img from "./images/menu.png";
 import gallery from "./images/gallery.png";
 import mace from "./images/mace.png";
 import funeral from "./images/funeral.png";
-import larkin from "./images/larkin.png"
-import logo from "./images/skullys-logo.png"
+import logo from "./images/skullys-logo.png";
+import { mint, checkTotalSupply, initializeEthers } from "./functions/ethersFunctions";
+import ConnectWallet from "./components/ConnectWallet";
+import { Context } from "./Store";
 
 const menuToggle = () => {
-    const navlinks = document.querySelector('.nav-links')
-    navlinks.classList.toggle('mobile-menu')
+    const navlinks = document.querySelector('.nav-links');
+    navlinks?.classList.toggle('mobile-menu');
 }
 function App() {
 
-  const [active, setActive] = React.useState("Public")
+  //const [active, setActive] = React.useState("Public");
+  const [state, dispatch]:any = useContext(Context);
+  const [spendInput, setSpendInput] = useState('');
+
+  useEffect(() => {
+    async function getInit() {
+        await initializeEthers(dispatch);
+    }
+    getInit();
+  },[]);
+
+  useEffect(() => {
+    async function getSupply() {
+        await checkTotalSupply(dispatch);
+    }
+    getSupply();
+  },[state.walletAddress]);
+
   return (
     <Router>
     <div className="App">
@@ -27,7 +46,7 @@ function App() {
                 <ul className="nav-links">
                     <li><a href="https://thecult.gitbook.io/welcome/">Roadmap</a></li>
                     <li><a href="https://fantomgallery.com">Gallery</a></li>
-                    <li><button className="connect-btn"><Link to="/">Connect</Link></button></li>
+                    <li><Link to="/"><ConnectWallet/></Link></li>
                 </ul>
                 <img src={menu_img} alt="" className="menu-btn" onClick={menuToggle}/>
             </nav>
@@ -36,13 +55,21 @@ function App() {
             <section className="drops">
             <div className="title">
             <h1>Join the cult.</h1>
-            <h2>0/3,333</h2>
+            <h2>{state.totalPopsSupply}/3,333</h2>
             </div>
             <div className="row">
                 <div className="col">
                 <div className="mint-text">
                     <h4>Summon a Pop Skully to join the cult</h4>
-                    <button>Coming soon</button>
+                    {
+                            !state.walletAddress ? <h4>Connect Wallet to enter the Summoning Circle</h4> : 
+                            <>
+                                <input type="number" value={spendInput} onInput={e => setSpendInput((e.target as HTMLInputElement).value)} placeholder="Amount: Max of 5"/>
+                                <br/>
+                                <br/>
+                                <button onClick={() => mint(dispatch, spendInput)}  disabled={false}>Mint</button>
+                            </>
+                    }
                     <h4>Each pop skully is 50 FTM</h4>
                 </div>
                 </div>
@@ -78,14 +105,9 @@ function App() {
                 <h3>Mace Papa</h3>
                 <h4>@CryptoMacePapa</h4>
                 </div>
-                <div className="col">
-                <a href="https://twitter.com/CodeLarkin"><img className="team-member" src={larkin} alt=""/></a>
-                <h3>Larkin</h3>
-                <h4>@CodeLarkin</h4>
-                </div>
             </div>
             </div>
-            <h4>Special thanks to Tombheads, Elle, Dream, Degatchi, Maxflow, Xona, the empire, and our cult members.</h4>
+            <h4>Special thanks to Larkin, Tombheads, Elle, Dream, Degatchi, Maxflow, Xona, The Empire, and our cult members.</h4>
             </section>
             <section className="card-section">
             <a href="https://fantomgallery.com"><div className="join">
