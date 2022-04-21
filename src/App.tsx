@@ -68,7 +68,6 @@ function App() {
                             <>
                                 <h4>You have a whitelist. Take your ritual for free</h4>
                                 <br/>
-                                <br/>
                                 <button onClick={() => mint(dispatch, 1)}  disabled={false}>Summon</button>
                             </>
                             :
