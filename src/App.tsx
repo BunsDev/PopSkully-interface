@@ -61,9 +61,9 @@ function App() {
             <div className="row">
                 <div className="col">
                 <div className="mint-text">
-                    <h4>Summon a Pop Skully to join the cult...after we unpause the mint</h4>
+                    <h4>Summon a Pop Skully to join the cult</h4>
                     {
-                            !state.walletAddress ? <h4>No need to connect, mint is paused for the moment</h4> : 
+                            !state.walletAddress ? <h4>Connect Wallet to Summon</h4> : 
                             state.walletAddress && state.isWhitelisted ? 
                             <>
                                 <h4>You have a whitelist. Take your ritual for free</h4>
