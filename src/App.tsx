@@ -60,9 +60,9 @@ function App() {
             <div className="row">
                 <div className="col">
                 <div className="mint-text">
-                    <h4>Summon a Pop Skully to join the cult</h4>
+                    <h4>Summon a Pop Skully to join the cult...after we unpause the mint</h4>
                     {
-                            !state.walletAddress ? <h4>Connect Wallet to enter the Summoning Circle</h4> : 
+                            !state.walletAddress ? <h4>No need to connect, mint is paused for the moment</h4> : 
                             <>
                                 <input type="number" value={spendInput} onInput={e => setSpendInput((e.target as HTMLInputElement).value)} placeholder="Amount: Max of 5"/>
                                 <br/>
