@@ -10,7 +10,7 @@ import gallery from "./images/gallery.png";
 import mace from "./images/mace.png";
 import funeral from "./images/funeral.png";
 import logo from "./images/skullys-logo.png";
-import { mint, checkTotalSupply, initializeEthers } from "./functions/ethersFunctions";
+import { mint, checkTotalSupply, initializeEthers, checkForWhitelistMint } from "./functions/ethersFunctions";
 import ConnectWallet from "./components/ConnectWallet";
 import { Context } from "./Store";
 
@@ -34,6 +34,7 @@ function App() {
   useEffect(() => {
     async function getSupply() {
         await checkTotalSupply(dispatch);
+        await checkForWhitelistMint(dispatch);
     }
     getSupply();
   },[state.walletAddress]);
@@ -63,11 +64,19 @@ function App() {
                     <h4>Summon a Pop Skully to join the cult...after we unpause the mint</h4>
                     {
                             !state.walletAddress ? <h4>No need to connect, mint is paused for the moment</h4> : 
+                            state.walletAddress && state.isWhitelisted ? 
+                            <>
+                                <h4>You have a whitelist. Take your ritual for free</h4>
+                                <br/>
+                                <br/>
+                                <button onClick={() => mint(dispatch, 1)}  disabled={false}>Summon</button>
+                            </>
+                            :
                             <>
                                 <input type="number" value={spendInput} onInput={e => setSpendInput((e.target as HTMLInputElement).value)} placeholder="Amount: Max of 5"/>
                                 <br/>
                                 <br/>
-                                <button onClick={() => mint(dispatch, spendInput)}  disabled={true}>Summon</button>
+                                <button onClick={() => mint(dispatch, spendInput)}  disabled={false}>Summon</button>
                             </>
                     }
                     <h4>Each pop skully is 50 FTM</h4>

@@ -4,6 +4,7 @@ export const defaultState = {
     onFantomNetwork: false,
     totalPopsSupply: 0,
     errorMessage: "",
+    isWhitelisted: false,
 };
 
 const formatAddress = (addressString:any) => {
@@ -39,7 +40,12 @@ const Reducer = (state:any, action:any) => {
     case 'errorMessage':
       return {
         ...state,
-        errorMessagee: action.content
+        errorMessage: action.content
+      }
+    case 'isWhitelisted':
+      return {
+          ...state,
+          isWhitelisted: action.content
       }
     default:
       return state;

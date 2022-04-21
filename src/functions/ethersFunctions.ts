@@ -69,6 +69,7 @@ export const checkForWhitelistMint = async (dispatch:any) => {
     if(whitelistNumber.toNumber() === 1) {
       isWhitelisted = true;
     }
+    dispatch({type: 'isWhitelisted', content: isWhitelisted});
     return isWhitelisted;
   } catch(error) {
     return console.log(error);
