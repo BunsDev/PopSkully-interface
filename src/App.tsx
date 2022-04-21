@@ -127,7 +127,7 @@ function App() {
             </section>
             <section className="footer">
                 <div className="social-links">
-                    <a href="https://twitter.com/popskullys"><img src={twitter_img} alt=""/></a>
+                    <a href="https://twitter.com/CultNFTs"><img src={twitter_img} alt=""/></a>
                     <a href="https://discord.com/eBHpwv9yGW"><img src={discord_img} alt=""/></a>
                     <a href="https://fantomgallery.com"><img src={gallery} alt=""/></a>
                   </div>
