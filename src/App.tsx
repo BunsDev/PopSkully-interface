@@ -91,8 +91,8 @@ function App() {
             </header>
             <section className="info">
 
-                <h1>3,333 Unique pop skullys</h1>
-                <h4>Pop Skullys are a collection of 3,333 NFTs (non-fungible tokens) made from hundreds of unique traits designed by Funeral. There are special characters hidden within the collection to add to the fun.</h4>
+                <h1>3,333 Unique Pop kullys</h1>
+                <h4>Pop Skullys are a collection of 3,333 randomly generated NFTs collectibles made from hundreds of traits designed by Funeral.</h4>
                 <h4>The Cult is real. We are here for the art. We are here for the tech.</h4>
 
             </section>
