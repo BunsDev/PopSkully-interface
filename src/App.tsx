@@ -102,12 +102,12 @@ function App() {
                 <div className="col">
                 <a href="https://twitter.com/yolofinancial"><img className="team-member" src={funeral} alt=""/></a>
                 <h3>Funeral</h3>
-                <h4>@yolofinancial</h4>
+                <h4>Designer/ Dev</h4>
                 </div>
                 <div className="col">
                 <a href="https://twitter.com/CryptoMacePapa"><img className="team-member" src={mace} alt=""/></a>
                 <h3>Mace Papa</h3>
-                <h4>@CryptoMacePapa</h4>
+                <h4>Dev</h4>
                 </div>
             </div>
             </div>
