@@ -66,7 +66,7 @@ function App() {
                             !state.walletAddress ? <h4>Connect Wallet to Summon</h4> : 
                             state.walletAddress && state.isWhitelisted ? 
                             <>
-                                <h4>You have a whitelist. Take your ritual for free</h4>
+                                <h4>You are on the list. Cast your spell for free</h4>
                                 <br/>
                                 <button onClick={() => mint(dispatch, 1)}  disabled={false}>Summon</button>
                             </>
