@@ -45,7 +45,7 @@ function App() {
            <nav className="navbar">
                 <h1 className="logo"><a>POP SKULLYS</a></h1>
                 <ul className="nav-links">
-                    <li><a href="https://thecult.gitbook.io/welcome/">Roadmap</a></li>
+                    <li><a href="https://thecult.gitbook.io/welcome/">The Cult</a></li>
                     <li><a href="https://fantomgallery.com">Gallery</a></li>
                     <li><Link to="/"><ConnectWallet/></Link></li>
                 </ul>
