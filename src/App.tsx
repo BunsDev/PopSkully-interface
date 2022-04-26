@@ -78,7 +78,7 @@ function App() {
                                 <button onClick={() => mint(dispatch, spendInput)}  disabled={false}>Summon</button>
                             </>
                     }
-                    <h4>Each pop skully is 50 FTM</h4>
+                    <h4>Each Pop Skully is 50 FTM</h4>
                 </div>
                 </div>
                 <div className="col">
