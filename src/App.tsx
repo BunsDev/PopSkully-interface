@@ -95,8 +95,6 @@ function App() {
                 <h4>Pop Skullys are a collection of 3,333 NFTs (non-fungible tokens) made from hundreds of unique traits designed by Funeral. There are special characters hidden within the collection to add to the fun.</h4>
                 <h4>The Cult is real. We are here for the art. We are here for the tech. As The Cult grows, so does our reach. We will offer collectors exclusive access to merchandise, virtual galleries, and collectibles as our brand grows.</h4>
                 <h4>Owning a Pop Skully allows you to submit artists to be featured in our virtual gallery. This ensures that artists and creators have a platform to showcase their work.</h4>
-                <h1>Who are we?</h1>
-                <h4>We are a digital asset brand focused on delivering new ways of experiencing art and NFTs. Our team aims to deliver unique expriences to online communities using virtual galleries, POAPs, metaverse wearables, and events.</h4>
 
             </section>
             <section className="team">
