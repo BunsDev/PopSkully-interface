@@ -327,7 +327,7 @@ section {
   bottom: 0;
   right: 0;
   height: 400px;
-  margin-bottom: -1rem;
+  margin-bottom: 0;
 }
 .drops .row {
   flex-direction: column;
