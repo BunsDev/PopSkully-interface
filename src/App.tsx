@@ -160,7 +160,7 @@ function App() {
                     <a href="https://twitter.com/CultNFTs"><img src={twitter_img} alt=""/></a>
                     <a href="https://discord.com/eBHpwv9yGW"><img src={discord_img} alt=""/></a>
                     <a href="https://fantomgallery.com"><img src={gallery} alt=""/></a>
-                    <a href="https://fantomgallery.com"><img src={nftkey} alt=""/></a>
+                    <a href="https://nftkey.app/collections/popskullys/"><img src={nftkey} alt=""/></a>
                   </div>
             </section>
         </div>
