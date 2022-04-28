@@ -684,28 +684,16 @@ li:hover {
     height: 300px;
   }
   .wallets .card p {
-    margin-top: 5px;
+    margin-top: 0px;
   }
+  .wallets .card .card-links {
+    margin-top: 60px;
+  }
+  
   .wallets .row {
     flex-direction: column;
   }
   .wallets .row .col {
     width: 70vw;
-  }
-
-  .team .row {
-    flex-direction: column;
-  }
-  .team .row .col {
-    margin: 20px auto;
-  }
-  .drops .row {
-    flex-direction: column;
-  }
-  .drops .row .col {
-    margin: 20px auto;
-  }
-  .footer {
-    padding: 10px;
   }
 }
