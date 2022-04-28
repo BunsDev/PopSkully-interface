@@ -684,7 +684,7 @@ li:hover {
     height: 300px;
   }
   .wallets .card p {
-    margin-top: 10px;
+    margin-top: 5px;
   }
   .wallets .row {
     flex-direction: column;
