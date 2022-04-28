@@ -678,6 +678,10 @@ li:hover {
   .row .col h1 {
     text-align: left;
   }
+  .wallets .col {
+    width: 50%;
+    padding: 0px;
+  }
   .wallets .card {
     margin-top: 50px;
     max-width: 400px;
