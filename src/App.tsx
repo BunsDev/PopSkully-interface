@@ -66,7 +66,7 @@ function App() {
                 <div className="mint-text">
                     <h4>Summon a Pop Skully to join the cult</h4>
                     {
-                            !state.walletAddress ? <h3>Connect Wallet to Summon</h3> : 
+                            !state.walletAddress ? <h3>Connect your wallet to summon</h3> : 
                             state.walletAddress && state.isWhitelisted ? 
                             <>
                                 <h4>You are on the list. Cast your spell for free.</h4>
