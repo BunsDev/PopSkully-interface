@@ -328,10 +328,10 @@ section {
   text-align: left;
 }
 .wallet-cards .card .card-links {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .card-links li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .card-links a {
   color: #cccccc;
@@ -684,7 +684,7 @@ li:hover {
     height: 300px;
   }
   .wallets .card p {
-    margin-top: 15px;
+    margin-top: 10px;
   }
   .wallets .row {
     flex-direction: column;
