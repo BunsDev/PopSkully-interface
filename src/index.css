@@ -671,7 +671,7 @@ li:hover {
     width: 300px;
   }
 
-  /* NEW TO WEB3? */
+ /* NEW TO WEB3? */
   .wallets {
     margin-top: 50px;
   }
@@ -685,6 +685,52 @@ li:hover {
   }
   .wallets .card p {
     margin-top: 0px;
+  }
+  .wallets .wallet-cards .card img {
+    margin-bottom: 10px;
+  }
+  .wallets .card .card-links {
+    margin-top: 40px;
+  }
+
+  .wallets .row {
+    flex-direction: column;
+  }
+  .wallets .row .col {
+    width: 70vw;
+  }
+
+  .team .row {
+    flex-direction: column;
+  }
+  .team .row .col {
+    margin: 20px auto;
+  }
+  .drops .row {
+    flex-direction: column;
+  }
+  .drops .row .col {
+    margin: 20px auto;
+  }
+  .footer {
+    padding: 10px;
+  }/* NEW TO WEB3? */
+  .wallets {
+    margin-top: 50px;
+  }
+  .row .col h1 {
+    text-align: left;
+  }
+  .wallets .card {
+    margin-top: 50px;
+    width: 70vw;
+    height: 300px;
+  }
+  .wallets .card p {
+    margin-top: 0px;
+  }
+  .wallets .wallet-cards .card img {
+    margin-bottom: 10px;
   }
   .wallets .card .card-links {
     margin-top: 40px;
