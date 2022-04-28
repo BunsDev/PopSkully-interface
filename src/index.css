@@ -90,6 +90,9 @@ a {
   color: white;
   cursor: pointer;
 }
+h1 {
+  font-size: 32px;
+}
 button {
   text-decoration: none;
   outline: none;
