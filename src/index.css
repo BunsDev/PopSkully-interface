@@ -717,3 +717,8 @@ li:hover {
     padding: 10px;
   }
 }
+@media only screen and (max-width: 500px) {
+  .wallets .card {
+    height: 310px;
+  }
+}
