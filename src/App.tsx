@@ -10,6 +10,8 @@ import gallery from "./images/gallery.png";
 import mace from "./images/mace.png";
 import funeral from "./images/funeral.png";
 import logo from "./images/skullys-logo.png";
+import mm_logo from "./images/metamask-logo.png";
+
 import { mint, checkTotalSupply, initializeEthers, checkForWhitelistMint } from "./functions/ethersFunctions";
 import ConnectWallet from "./components/ConnectWallet";
 import { Context } from "./Store";
@@ -94,6 +96,29 @@ function App() {
                 <h1>3,333 Unique Pop Skullys</h1>
                 <h4>Pop Skullys are a collection of 3,333 randomly generated collectibles made from hundreds of traits designed by Funeral. The Cult is real. We are here for the art. We are here for the tech.</h4>
                 
+            </section>
+            <section className="wallets">
+            <div className="wallet-cards">
+            <div className="row">
+                <div className="col">
+                    <h1>Are you new to Web3?</h1>
+                    <p>You can use a wallet like Metamask to safely store your FTM and other crypto currencies. This wallet will be installed as a browser extension and serve as your account as you explore new projects.</p>
+
+                </div>
+                <div className="card">
+                    <img src={mm_logo} alt=""/>
+                    
+                        <p>Metamask is the most popular software wallet and browser extension. Metamask allows you to store mainnet FTM and interact with Fantom dApps.</p>
+  
+                    <div className='card-links'>
+                    <ul>
+                    <li><a href="https://metamask.io">Download Metamask </a></li>
+                    <li><a href="https://docs.fantom.foundation/tutorials/set-up-metamask">Set up Metamask on Fantom</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
             </section>
             <section className="team">
             <div className="team-members">
