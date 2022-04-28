@@ -275,6 +275,73 @@ section {
 .info h4 {
   color: white;
 }
+
+/* WALLET */
+.wallets {
+  margin-bottom: 80px;
+}
+.wallets .card {
+  align-items: left;
+}
+.wallets .card {
+  height: 250px;
+  width: 400px;
+  background-color: white;
+  margin-top: 100px;
+  padding: 30px;
+  box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.349);
+}
+.wallets .col {
+  width: 50%;
+  padding: 30px;
+}
+.wallets p {
+  font-size: 16px;
+  font-weight: lighter;
+  color: grey;
+}
+.wallets h1 {
+  margin-top: 80px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+.wallet-cards .card p {
+  padding: 0px 0px;
+  color: black;
+}
+.wallet-cards .card a {
+  padding: 0px 0px;
+}
+.wallets .wallet-cards .card img {
+  margin-top: 0px;
+  height: 20%;
+  margin-bottom: 15px;
+}
+.wallet-cards .card:hover {
+  transform: scale(1);
+  box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.349);
+}
+.wallets .card {
+  transition: 0s ease;
+}
+.wallet-cards .card {
+  text-align: left;
+}
+.wallet-cards .card .card-links {
+  margin-top: 30px;
+}
+.card-links li {
+  margin-bottom: 10px;
+}
+.card-links a {
+  color: #cccccc;
+}
+.card-links a:hover {
+  color: black;
+}
+
+
+
 .team .team-members h4 {
   font-size: 14px;
   color: #adadad;
@@ -289,10 +356,6 @@ section {
   margin-top: 5px;
   margin-bottom: 30px;
   color: grey;
-}
-.who {
-  align-content: center;
-  width: 50%;
 }
 .title {
   text-align: center;
@@ -309,7 +372,7 @@ section {
 .row .col {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 .row .col img {
   width: 80%;
@@ -426,7 +489,7 @@ h4 {
 p {
   font-size: 12px;
   color: grey;
-  padding: 0px 40px;
+  padding: 0px 0px;
 }
 section .podcasts {
   width: 100%;
@@ -551,7 +614,7 @@ li:hover {
 }
 
 /* Styling for mobile */
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
   .menu-btn {
     display: block;
     margin-top: -15px;
@@ -576,10 +639,6 @@ li:hover {
     top: 20px;
     left: 20px;
   }
-  .drops img {
-    position: absolute;
-    margin-right: 50px;
-  }
   .nav-links {
     flex-direction: column;
     width: 100%;
@@ -592,12 +651,12 @@ li:hover {
   .mobile-menu {
     margin-top: 0px;
   }
+  .drops h1 {
+    font-size: 54px;
+  }
   header h1 {
     margin-bottom: 10px;
     font-size: 92px;
-  }
-  .pop-skully {
-    display: none;
   }
   .nav-links li {
     margin: 30px auto;
@@ -607,6 +666,35 @@ li:hover {
   }
   .card {
     width: 300px;
+  }
+
+  /* NEW TO WEB3? */
+  .wallets {
+    margin-top: 50px;
+  }
+  .row .col h1 {
+    text-align: left;
+  }
+  .wallets .card {
+    margin-top: 50px;
+    width: 70vw;
+    height: 300px;
+  }
+  .wallets .card p {
+    margin-top: 15px;
+  }
+  .wallets .row {
+    flex-direction: column;
+  }
+  .wallets .row .col {
+    width: 70vw;
+  }
+
+  .team .row {
+    flex-direction: column;
+  }
+  .team .row .col {
+    margin: 20px auto;
   }
   .drops .row {
     flex-direction: column;
