@@ -721,4 +721,7 @@ li:hover {
   .wallets .card {
     height: 310px;
   }
+   .wallets .wallet-cards .card img {
+    margin-bottom: 5px;
+  }
 }
