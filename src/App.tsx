@@ -7,6 +7,7 @@ import twitter_img from "./images/twitter.png";
 import popskully from "./images/vector-logo.png";
 import menu_img from "./images/menu.png";
 import gallery from "./images/gallery.png";
+import nftkey from "./images/nftkey.png";
 import mace from "./images/mace.png";
 import funeral from "./images/funeral.png";
 import logo from "./images/skullys-logo.png";
@@ -159,6 +160,7 @@ function App() {
                     <a href="https://twitter.com/CultNFTs"><img src={twitter_img} alt=""/></a>
                     <a href="https://discord.com/eBHpwv9yGW"><img src={discord_img} alt=""/></a>
                     <a href="https://fantomgallery.com"><img src={gallery} alt=""/></a>
+                    <a href="https://fantomgallery.com"><img src={nftkey} alt=""/></a>
                   </div>
             </section>
         </div>
