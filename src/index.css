@@ -658,6 +658,9 @@ li:hover {
     margin-bottom: 10px;
     font-size: 92px;
   }
+  header .pop-skully {
+    display: none;
+}
   .nav-links li {
     margin: 30px auto;
   }
